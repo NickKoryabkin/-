@@ -30,12 +30,12 @@ for c in x:
                 print(chr(m + s % 26 - 26), end='')
         elif 1039 < m < 1072:
             if 1039 < m + s % 32 < 1072:
-                print(chr(m + s), end='')
+                print(chr(m + s % 32), end='')
             else:
                 print(chr(m + s % 32 - 32), end='')
         elif 1071 < m < 1104:
-            if 1071 < m + s % 32 < 1084:
-                print(chr(m + s), end='')
+            if 1071 < m + s % 32 < 1104:
+                print(chr(m + s % 32), end='')
             else:
                 print(chr(m + s % 32 - 32), end='')
         else:
@@ -61,7 +61,7 @@ for c in x:
                 print(chr(m - (abs(s) % 32)), end='')
             else:
                 print(chr(m - (abs(s) % 32) + 32), end='')
-        elif 1071< m < 1104:
+        elif 1071 < m < 1104:
             if 1071 < m - (abs(s) % 32) < 1104:
                 print(chr(m - (abs(s) % 32)), end='')
             else:
